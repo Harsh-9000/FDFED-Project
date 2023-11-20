@@ -1,0 +1,5 @@
+# dependencies
+frontend/node_modules
+backend/config/.env
+backend/node_modules
+Occasion-Mate Project Workspace.code-workspace

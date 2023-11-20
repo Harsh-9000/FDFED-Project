@@ -1,0 +1,33 @@
+.embla {
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-height: 100%;
+    height: var(--slide-height);  
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-radius: 1rem;
+  }
+  .embla__viewport {
+    overflow: hidden;
+    height: var(--slide-height);  
+  }
+  .embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    margin-left: calc(var(--slide-spacing) * -1);
+    height: var(--slide-height);  
+  }
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    height: var(--slide-height);  
+  }
+  .embla__slide__img {
+    display: block;
+    height: var(--slide-height);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
